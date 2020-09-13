@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WordCount</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to WordCount</h1>
+        <a href="{% url 'about'%}">About</a>
+        <br />
+    </header>
+    <main>
+        <form action = "{%url 'count' %}">
+            <textarea cols="40" rows="10" name="fulltext"></textarea>
+            <br />
+            <input type="submit" value="Count!" />
+        </form>
+    </main>
+</body>
+</html>
